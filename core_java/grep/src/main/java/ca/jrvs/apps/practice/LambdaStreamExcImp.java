@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -48,12 +49,8 @@ public class LambdaStreamExcImp implements LambdaStreamExc{
     }
 
     @Override
-    public Double squareRootIntStream(IntStream intStream) {
-        //Double sq = intStream.asDoubleStream().map(x -> sqrt(x)).collect();
-        //DoubleStream sq1 = intStream.asDoubleStream();
-        //Double sq3 = sq1.map(x -> Math.sqrt(x)).collect(Double);
-
-        return null;
+    public DoubleStream squareRootIntStream(IntStream intStream) {
+        return intStream.mapToDouble(x -> sqrt(x));
     }
 
     @Override
