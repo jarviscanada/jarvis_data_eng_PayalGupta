@@ -56,7 +56,6 @@ public class JavaGrepLambdaImp extends JavaGrepImp{
        Stream<String> lines = Files.lines(inputFile.toPath());
        return lines.collect(Collectors.toList());
     }
-
 }
 
 
