@@ -1,6 +1,6 @@
 # Payal Gupta . Jarvis Consulting
 
-I am a Results-driven individual who is passionate about software development. I have more than 2 years of experience in the insurance/financial industry as a Quality Assurance Analyst, this experience helped me to build an analytical, detail-oriented mindset and also exposed me to the work culture and methodologies followed in large-scale industry. While I was completing my Bachelor in Computer Science Engineering I could help a non-profit organization by developing their website which helped them to raise funds, this made me more passionate about this field. Since then I have worked on front-end projects using JavaScript, HTML/CSS. Due to my curious personality, I kept on learning the latest technologies like Cloud services(AWS and GCP) side by side. While working in Jarvis I worked on the industry-related application using technologies like Java, Maven, Docker, SQL, Bash, REST API. Through my passion to help others by improving existing methods and enthusiasm to learn new emerging technologies, I will be a great asset to the team and will also be excited about the new upcoming opportunities.
+I am a Results-driven individual who is passionate about software development. While working in Jarvis I worked on industry-related applications using technologies like Java, SQL, Bash, Maven, Docker, REST API. I have more than two years of experience in the insurance/financial industry as an IT professional, this experience helped me to build an analytical, detail-oriented mindset and also exposed me to the work culture and methodologies followed in large-scale industry. During my Computer Science Engineering degree, I could help a non-profit organization by developing their website that helped them to raise funds, which made me more passionate about this field. Since then I have worked on front-end projects using JavaScript, HTML/CSS as well as back-end projects using Java, Python, and SQL. Due to my curiosity, I learned the latest technologies like Cloud services(AWS and GCP) along with work. Through my passion to help others by improving existing methods and enthusiasm to learn new emerging technologies, I will be a great asset to the team and will also be excited about the new upcoming opportunities.
 
 ## Skills
 
@@ -15,13 +15,13 @@ I am a Results-driven individual who is passionate about software development. I
 Project source code: [https://github.com/jarviscanada/jarvis_data_PayalGupta](https://github.com/jarviscanada/jarvis_data_PayalGupta)
 
 
-**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_PayalGupta/tree/master/linux_sql)]: Implemented a Linux clustering monitoring agent to monitor, collect and analyze data from host machines in a 10 node cluster over a network in a PostgreSQL database provisioned using docker container using bash scripts for better business decisions and resources planning.
+**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_PayalGupta/tree/master/linux_sql)]: Implemented a Linux clustering monitoring agent to monitor, collect and analyze data from host machines in a ten node cluster over a network in a PostgreSQL database provisioned using docker container using bash scripts and crontab to automate the script's execution. Created the SQL queries for analyzing the collected data for better business decisions and resources planning.
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_PayalGupta/tree/master/core_java)]:
       
-  - Twitter App: Developed a CLI interface using MVC architecture for users to create, read and delete tweets through Twitter RESTful API. Performed testing using JUnit test cases.
-  - JDBC App: Constructed the DAO implementation of retail customer orders through JDBC with PostgreSQL. The data manipulation through CRUD was tested.
-  - Grep App: Implemented Grep application in Java which simulates the Linux grep command to find patterns in a file and write them into another file. The implemented code was then optimized using Lambda and Streams API
+  - Twitter App: Developed a CLI interface using MVC architecture in Java 8 for users to create, read and delete tweets through Twitter RESTful API. Performed testing using JUnit test cases(Mockito framework), Postman and deployed the application using Docker.
+  - JDBC App: Constructed the DAO implementation of retail customer orders through JDBC with PostgreSQL. Tested the CRUD data manipulation.
+  - Grep App: Implemented Grep application in Java which simulates the Linux grep command to find patterns in a file and write them into another file using Intellij IDE. The implemented code was then optimized using Lambda and Streams API
 
 **Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_PayalGupta/tree/master/springboot)]: Not Started
 
@@ -35,12 +35,12 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_PayalGupta](ht
 
 
 ## Highlighted Projects
-**HR Management System**: Developed an HR Management System in Java using JDBC, MySQL, Servlets, JavaScript. The application supported both user and HR login, the user had the access to their employment details as well as the privilege to edit their information and the HR had access to view all users with privileges to add, remove and edit a user.
+**HR Management System**: Developed an HR Management System in Java using JDBC, MySQL, Servlets, JavaScript, Eclipse and MVC design pattern. The application supported both user and HR login, the user had the access to their employment details as well as the privilege to edit their information and the HR had access to view all users with privileges to add, remove and edit a user.
 
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2020-present)**: Implemented various projects successfully using agile methodologies involving SQL, Bash, Java, Maven, Docker in Linux(CentOS and Ubuntu) and WSL. Participated in scrum ceremonies and collaborated with team members.
+**Software Developer, Jarvis (2020-present)**: Woked in an agile/Scrum team of 4 people where I was responsible for developing application using SQL, Bash, Java, Maven in Linux(CentOS and Ubuntu) and WSL and deployed them using Docker. I diligently performed my duties as team lead and conducted the daily standups and collaborated with the team members during various scrum ceremonies.
 
 **Quality Assurance Analyst, Canada Life (2018-2020)**: Worked on Agile and Waterfall projects as a QA Lead. Identified test scenarios, test data, test environment, and the scope of testing to be performed based on project requirements. Created automation scripts for regression testing using a selenium-based testing framework. Created SQL queries to collect test data from different sources like Salesforce and different databases. Performed functional, integration, regression, accessibility, ETL, API testing and coordinated with teams performing non-functional testing like performance and security testing. Provided support for weekly production deployments.
 
@@ -48,7 +48,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_PayalGupta](ht
 
 
 ## Education
-**Seneca College (22018-2019)**, Database Application Development, Electrical and Computer Engineering
+**Seneca College (2018-2019)**, Database Application Development, Electrical and Computer Engineering
 
 **Fanshawe College (2017-2018)**, Software and Information Systems Testing, Electrical and Computer Engineering
 
