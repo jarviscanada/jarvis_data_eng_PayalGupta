@@ -4,9 +4,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.sql.Connection;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
+import java.util.List;
 
 public class JDBCExecutor {
     public static void main(String... args) {
@@ -15,8 +14,8 @@ public class JDBCExecutor {
         try{
             Connection connection = dcm.getConnection();
             OrderDAO orderDAO = new OrderDAO(connection);
-            Order order = orderDAO.findById(1000);
-            System.out.println(order);
+            List<Order> orders = orderDAO.getOrdersForCustomer(789);
+            orders.forEach(System.out::println);
         }catch(SQLException e){
             logger.error("Connection error");
             }
