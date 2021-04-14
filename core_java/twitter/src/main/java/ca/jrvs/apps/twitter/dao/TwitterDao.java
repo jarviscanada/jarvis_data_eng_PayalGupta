@@ -6,12 +6,15 @@ import ca.jrvs.apps.twitter.util.JsonUtil;
 import com.google.gdata.util.common.base.PercentEscaper;
 import org.apache.http.HttpResponse;
 import org.apache.http.util.EntityUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
 
+@Repository
 public class TwitterDao implements CrdDao<Tweet, String>{
     //URI constants
     private static final String API_BASE_URI = "https://api.twitter.com";
@@ -29,6 +32,7 @@ public class TwitterDao implements CrdDao<Tweet, String>{
 
     private HttpHelper httpHelper;
 
+    @Autowired
     public TwitterDao(HttpHelper httpHelper) {
 
         this.httpHelper = httpHelper;

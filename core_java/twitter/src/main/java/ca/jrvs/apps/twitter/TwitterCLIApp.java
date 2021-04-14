@@ -11,10 +11,9 @@ import ca.jrvs.apps.twitter.service.Service;
 import ca.jrvs.apps.twitter.service.TwitterService;
 import ca.jrvs.apps.twitter.util.JsonUtil;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.Locale;
-import java.util.stream.Collectors;
-
+@Autowired
 public class TwitterCLIApp {
     public static final String USAGE = "USAGE: TwitterCLIApp post|show|delete [options]";
     private Controller controller;

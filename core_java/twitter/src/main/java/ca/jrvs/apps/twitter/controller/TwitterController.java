@@ -3,6 +3,7 @@ package ca.jrvs.apps.twitter.controller;
 import ca.jrvs.apps.twitter.model.Tweet;
 import ca.jrvs.apps.twitter.service.Service;
 import ca.jrvs.apps.twitter.util.TweetUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 
 import java.util.List;
@@ -13,6 +14,7 @@ public class TwitterController implements Controller{
     private static final String COMMA = ",";
     private Service service;
 
+    @Autowired
     public TwitterController(Service service) {
         this.service = service;
     }
