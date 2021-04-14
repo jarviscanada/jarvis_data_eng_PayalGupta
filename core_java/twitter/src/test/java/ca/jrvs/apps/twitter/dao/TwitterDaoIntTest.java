@@ -14,12 +14,12 @@ public class TwitterDaoIntTest {
 
     @Before
     public void setup(){
-        String CONSUMER_KEY = System.getenv("consumerKey");
-        String CONSUMER_SECRET = System.getenv("consumerSecret");
-        String ACCESS_TOKEN = System.getenv("accessToken");
-        String TOKEN_SECRET = System.getenv("tokenSecret");
+        String consumerKey = System.getenv("consumerKey");
+        String consumerSecret = System.getenv("consumerSecret");
+        String accessToken = System.getenv("accessToken");
+        String tokenSecret = System.getenv("tokenSecret");
         //setup dependency
-        HttpHelper httpHelper = new TwitterHttpHelper(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, TOKEN_SECRET);
+        HttpHelper httpHelper = new TwitterHttpHelper(consumerKey, consumerSecret, accessToken, tokenSecret);
         //pass dependency
         this.dao = new TwitterDao(httpHelper);
     }
