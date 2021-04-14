@@ -1,5 +1,6 @@
 package ca.jrvs.apps.twitter.controller;
 
+import ca.jrvs.apps.twitter.model.Tweet;
 import ca.jrvs.apps.twitter.service.Service;
 import ca.jrvs.apps.twitter.util.TweetUtil;
 import org.junit.Before;
@@ -24,7 +25,7 @@ public class TwitterControllerUnitTest {
 
     @Test
     public void postTweet() {
-        when(service.postTweet(any())).thenReturn(TweetUtil.buildTweet("test", 50, 0));
+        when(service.postTweet(any())).thenReturn(new Tweet());
         try{
             controller.postTweet(new String[]{"post", "50:0.0"});
             fail();
@@ -46,7 +47,7 @@ public class TwitterControllerUnitTest {
 
     @Test
     public void showTweet() {
-        when(service.postTweet(any())).thenReturn(TweetUtil.buildTweet("test", 50, 0));
+        when(service.postTweet(any())).thenReturn(new Tweet());
         try{
             controller.showTweet(new String[]{"id"});
             fail();
@@ -62,7 +63,7 @@ public class TwitterControllerUnitTest {
 
     @Test
     public void deleteTweet() {
-        when(service.postTweet(any())).thenReturn(TweetUtil.buildTweet("test", 50, 0));
+        when(service.postTweet(any())).thenReturn(new Tweet());
         try{
             controller.deleteTweet(new String[]{"id1, id2"});
         }catch(IllegalArgumentException e){
