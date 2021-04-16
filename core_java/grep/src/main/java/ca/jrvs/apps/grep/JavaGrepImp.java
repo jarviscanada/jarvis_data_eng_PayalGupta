@@ -29,25 +29,25 @@ public class JavaGrepImp implements JavaGrep{
         try{
             javaGrepImp.process();
         }catch (Exception ex) {
-                javaGrepImp.logger.error(ex.getMessage(), ex);
-            }
+            javaGrepImp.logger.error(ex.getMessage(), ex);
         }
+    }
 
     @Override
     public void process() throws IOException {
-       try {
-           List<String> matchedLines = new ArrayList<>();
-           for (File file : listFiles(getRootPath())) {
-               for (String line : readLines(file)) {
-                   if (containsPattern(line)) {
-                       matchedLines.add(line);
-                   }
-               }
-           }
-           writeToFile(matchedLines);
-       }catch(Exception e){
-           logger.error("Process cannot be completed", e);
-       }
+        try {
+            List<String> matchedLines = new ArrayList<>();
+            for (File file : listFiles(getRootPath())) {
+                for (String line : readLines(file)) {
+                    if (containsPattern(line)) {
+                        matchedLines.add(line);
+                    }
+                }
+            }
+            writeToFile(matchedLines);
+        }catch(Exception e){
+            logger.error("Process cannot be completed", e);
+        }
     }
 
     @Override
@@ -55,7 +55,6 @@ public class JavaGrepImp implements JavaGrep{
         List<File> fileList = new ArrayList<>();
         File[] dir = new File(rootDir).listFiles();
         for (File file : dir){
-            System.out.println(file);
             if (file.isDirectory()){
                 fileList.addAll(listFiles(file.getAbsolutePath()));
             } else if (file.isFile()){
@@ -70,9 +69,8 @@ public class JavaGrepImp implements JavaGrep{
         List <String> lines = new ArrayList<>();
         try {
             BufferedReader reader = new BufferedReader(new FileReader(inputFile));
-            String line = reader.readLine();
-            while (line != null) {
-                line = reader.readLine();
+            String line;
+            while ((line = reader.readLine()) != null) {
                 lines.add(line);
             }
             reader.close();
@@ -84,7 +82,7 @@ public class JavaGrepImp implements JavaGrep{
 
     @Override
     public boolean containsPattern(String line) {
-       return (Pattern.matches(getRegex(), line));
+        return (Pattern.matches(getRegex(), line));
     }
 
     @Override
@@ -93,8 +91,9 @@ public class JavaGrepImp implements JavaGrep{
             BufferedWriter writer = new BufferedWriter(new FileWriter(getOutFile()));
             for (String line : lines) {
                 writer.write(line);
-                writer.close();
+                //writer.close();
             }
+            writer.close();
         }catch(Exception e){
             logger.error("Error while writing to file", e);
         }
