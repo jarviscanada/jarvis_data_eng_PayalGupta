@@ -58,4 +58,4 @@ users.
 1. The memory management can be improved to accommodate large memory requirements for the Java Grep
 implementations.
 2. The depth of the traversing directories can be added to the input argument.
-3. The other grep functionalities can be added
+3. The other grep functionalities can be added.
