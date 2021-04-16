@@ -13,10 +13,11 @@ $ java -cp target/*.jar <class_file> <regex/pattern> <directory> <out_file>
 ```
 2. Docker
 ```
-
+$ docker pull payalgupta98558/grep  
+$ docker run --rm -v {rootPath} -v {outFile} payalgupta98558/grep {regex} {rootPath} {outFile}
 ```
 
-#Implemenation
+# Implemenation
 ## Pseudocode
 The two implementations of the grep application are:
 
