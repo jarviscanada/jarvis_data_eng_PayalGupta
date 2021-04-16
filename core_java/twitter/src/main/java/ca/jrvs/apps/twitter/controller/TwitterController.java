@@ -8,6 +8,7 @@ import org.springframework.util.StringUtils;
 
 import java.util.List;
 
+@org.springframework.stereotype.Controller
 public class TwitterController implements Controller{
 
     private static final String COORD_SEP = ":";

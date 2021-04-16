@@ -23,7 +23,7 @@ public class TwitterCLIApp {
         this.controller = controller;
     }
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         String consumerKey = System.getenv("consumerKey");
         String consumerSecret = System.getenv("consumerSecret");
         String accessToken = System.getenv("accessToken");
@@ -37,7 +37,7 @@ public class TwitterCLIApp {
         TwitterCLIApp app = new TwitterCLIApp(controller);
 
         app.run(args);
-    }
+    }*/
         public void run(String[] args) {
             if (args.length == 0) {
                 throw new IllegalArgumentException(USAGE);
