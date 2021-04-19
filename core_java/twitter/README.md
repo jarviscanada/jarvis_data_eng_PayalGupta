@@ -4,7 +4,7 @@ This Twitter application allows users to post, show and delete tweets on
 Twitter via Command-Line. The application sends the requests via Twitter
 `REST API` and the responses are retrieved through the `HttpClient`, the `OAuth
 1.0` is used for authentication. The application uses `DAO`and is packaged using Maven
-dependencies and deployed using `Docker`. The testing was performed using Junit and Mockito.
+dependencies and deployed using `Docker`. The testing was performed using `Junit` and `Mockito`.
 
 
 # Quick Start
@@ -65,7 +65,7 @@ payalgupta98558/twitter delete s[id1, id2]
 
 # Design
 ## UML diagram
-![twitter app UML](https://github.com/jarviscanada/jarvis_data_eng_PayalGupta/tree/develop/core_java/twitter/assets/twitter_app_UML.png)
+![alt](https://github.com/jarviscanada/jarvis_data_eng_PayalGupta/blob/develop/core_java/twitter/assets/twitter_app_UML.png)
 
 The application has 4 main components:
 - **TwitterCLIApp**:
