@@ -65,7 +65,7 @@ payalgupta98558/twitter delete s[id1, id2]
 
 # Design
 ## UML diagram
-![image](https://github.com/jarviscanada/jarvis_data_eng_PayalGupta/tree/develop/core_java/twitter/assets/twitter_app_UML.png)
+![twitter app UML](https://github.com/jarviscanada/jarvis_data_eng_PayalGupta/tree/develop/core_java/twitter/assets/twitter_app_UML.png)
 
 The application has 4 main components:
 - **TwitterCLIApp**:
