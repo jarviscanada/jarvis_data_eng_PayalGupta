@@ -23,21 +23,6 @@ public class TwitterCLIApp {
         this.controller = controller;
     }
 
-    /*public static void main(String[] args) {
-        String consumerKey = System.getenv("consumerKey");
-        String consumerSecret = System.getenv("consumerSecret");
-        String accessToken = System.getenv("accessToken");
-        String tokenSecret = System.getenv("tokenSecret");
-        //setup dependency
-        HttpHelper httpHelper = new TwitterHttpHelper(consumerKey, consumerSecret, accessToken, tokenSecret);
-        //pass dependency
-        CrdDao crdDao = new TwitterDao(httpHelper);
-        Service service = new TwitterService(crdDao);
-        Controller controller = new TwitterController(service);
-        TwitterCLIApp app = new TwitterCLIApp(controller);
-
-        app.run(args);
-    }*/
         public void run(String[] args) {
             if (args.length == 0) {
                 throw new IllegalArgumentException(USAGE);
